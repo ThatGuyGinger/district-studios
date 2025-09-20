@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District Studio - Roblox Game Development</title>
+    <meta name="description" content="District Studio - Ambitious Roblox game development studio. We're a small team creating engaging games with heart. Founded 2023.">
+    <meta name="keywords" content="roblox, game development, district studio, roblox games, indie games, roblox group">
+    <meta name="author" content="District Studio">
+    <meta property="og:title" content="District Studio - Roblox Game Development">
+    <meta property="og:description" content="We're a small team of developers who love creating games. Currently building our first project with lots of heart.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="District Studio - Roblox Game Development">
+    <meta name="twitter:description" content="We're a small team of developers who love creating games. Currently building our first project with lots of heart.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <img src="district-logo.png" alt="District Studio Logo" class="loading-logo">
+            <div class="loading-text">District Studio</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="loading-bg-animation"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="district-logo.png" alt="District Studio Logo" class="nav-logo">
+                <span>District Studio</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#countdown" class="nav-link">Countdown</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="matrix-rain"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="district-logo.png" alt="District Studio Logo" class="hero-logo-img">
+            </div>
+            <h1 class="hero-title">District Studio</h1>
+            <p class="hero-subtitle">Ambitious Roblox Game Development Studio</p>
+            <p class="hero-description">We're a small team of developers who love creating games. Currently building our first project with lots of heart and maybe too much coffee.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn About Us</a>
+                <a href="https://www.roblox.com/communities/35469479/Vortex-Innovators#!/about" target="_blank" class="btn btn-secondary">Join the Fun</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About District Studio</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hey there! This is District Studio, and honestly, we're just getting started. Two friends who met making random Roblox scripts decided to team up and build something cool together.</p>
+                    <p>Our first game is still very much a work in progress, but we're excited about what we're creating. Think creative building meets strategy, with a healthy dose of "let's see what happens when we try this crazy idea."</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Team Members</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Game in Development</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">2023</div>
+                            <div class="stat-label">Founded</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-glow"></div>
+                        <h3>Why We Do This</h3>
+                        <p>We believe games should bring people together. We want to create experiences where you can build amazing things with your friends and make memories that last longer than your gaming session.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Next Release Countdown</h2>
+                <div class="section-line"></div>
+                <p>Our biggest project yet is coming soon!</p>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <div class="time-value" id="days">00</div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+                <div class="countdown-description">
+                    <h3>Something Cool is Coming</h3>
+                    <p>We're working really hard on our first game! No spoilers yet, but we think you're gonna love what we're cooking up. Stay tuned!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <div class="section-line"></div>
+                <p>Here's what we've been up to lately</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card" data-news-id="1">
+                    <div class="news-date">Dec 20, 2024</div>
+                    <h3>Welcome to District Studio</h3>
+                    <p>Welcome to the official launch of District Studio! We're a passionate team of developers creating engaging games on Roblox.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 1)">Read More</a>
+                </article>
+                <article class="news-card" data-news-id="2">
+                    <div class="news-date">Dec 15, 2024</div>
+                    <h3>Development Progress Update</h3>
+                    <p>Quick update on development progress. Our small team has been working hard to lay the foundation for our first game.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 2)">Read More</a>
+                </article>
+                <article class="news-card" data-news-id="3">
+                    <div class="news-date">Dec 10, 2024</div>
+                    <h3>Setting Up Our Workspace</h3>
+                    <p>Behind every successful game development project is a well-organized workspace and development pipeline.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 3)">Read More</a>
+                </article>
+                <article class="news-card" data-news-id="4">
+                    <div class="news-date">Dec 5, 2024</div>
+                    <h3>Community Building Begins</h3>
+                    <p>Building a community should start from day one. We launched our Discord server and began connecting with potential players.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 4)">Read More</a>
+                </article>
+                <article class="news-card" data-news-id="5">
+                    <div class="news-date">Nov 30, 2024</div>
+                    <h3>First Concept Art Revealed</h3>
+                    <p>Today marks an exciting milestone - we're sharing our first official concept art! Our art team has created some beautiful visuals.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 5)">Read More</a>
+                </article>
+                <article class="news-card" data-news-id="6">
+                    <div class="news-date">Nov 25, 2024</div>
+                    <h3>Learning from Other Developers</h3>
+                    <p>One of the best aspects of joining the Roblox development community has been connecting with other creators.</p>
+                    <a href="#" class="read-more" onclick="openNewsModal(event, 6)">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="contact" class="social-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect With Us</h2>
+                <div class="section-line"></div>
+                <p>Come hang out with us!</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@District-Studios-Official" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <div class="social-info">
+                        <h3>YouTube</h3>
+                        <p>Dev vlogs and random stuff</p>
+                    </div>
+                </a>
+                <a href="https://www.roblox.com/communities/35469479/Vortex-Innovators#!/about" target="_blank" class="social-link roblox">
+                    <i class="fas fa-gamepad"></i>
+                    <div class="social-info">
+                        <h3>Roblox Group</h3>
+                        <p>Join our little community</p>
+                    </div>
+                </a>
+                <a href="https://discord.gg/BSj8nxWg3W" target="_blank" class="social-link discord">
+                    <i class="fab fa-discord"></i>
+                    <div class="social-info">
+                        <h3>Discord</h3>
+                        <p>Chat with us directly!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="district-logo.png" alt="District Studio Logo" class="footer-logo">
+                    <h3>District Studio</h3>
+                    <p>Creating the future of Roblox gaming</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#countdown">Countdown</a>
+                    <a href="#news">News</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.youtube.com/@District-Studios-Official" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/BSj8nxWg3W" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.roblox.com/communities/35469479/Vortex-Innovators#!/about" target="_blank"><i class="fas fa-gamepad"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 District Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- News Modal -->
+    <div id="news-modal" class="news-modal">
+        <div class="news-modal-content">
+            <div class="news-modal-header">
+                <div>
+                    <h2 class="news-modal-title" id="modal-title"></h2>
+                    <div class="news-modal-date" id="modal-date"></div>
+                </div>
+                <button class="news-modal-close" onclick="closeNewsModal()">&times;</button>
+            </div>
+            <div class="news-modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
